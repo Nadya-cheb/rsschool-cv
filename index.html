@@ -1,53 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Мое резюме</title>
-	<link href="https://fonts.googleapis.com/css2?family= Lobster & display = swap" rel="stylesheet">
-	<style>
-		body {
-			font-family: 'Lobster', serif;
-			font-size: 48px;
-			text-shadow: 4px 4px 4px #aaa;
-		}
-	</style>
-	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rsschool-cv-html</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="./css/style.css"  rel="stylesheet">
+	
 </head>
-
 <body>
-	<div>
-		<h2>НАДЕЖДА ОСИПОВА</h2>
-		<h2>КОНТАКТЫ</h2>
-		<h1>Электронная почта: nadya21cheb@gmail.com</h1>
-		<h1>Телеграмма: @Nadya_cheb</h1>
-		<h1>Discord: Nadezda#6843</h1>
-		<h1>Адрес: Чебоксары, Чувашская Республика, Россия</h1>
-		<hr>
-		<h2>НАВЫКИ</h2>
-		<h1>Основы JavaScript</h1>
-		<hr>
-		<h2>ЯЗЫКИ</h2>
-		<h1>АНГЛИЙСКИЙ: уровень A1</h1>
-		<h1>РУССКИЙ: родной</h1>
-		<p>Обо мне</p>
-		<h1> Я люблю получать новые знания. Веду здоровый образ жизни. &nbsp;
-			Нравится работать, доводить поставленные задачи до конца и видеть результаты своего труда. &nbsp;
-			Со школы выработала в себе качество – ответственность, которое мне помогает на работе.</h1>
-		<hr>
-		<p>ОБРАЗОВАНИЕ</p>
-		<h1> Чувашский государственный университет им.Ульянова (ЧГУ), 1991-1996 - математик</h1>
-		<hr>
-		<p>КУРСЫ</p>
-		<h1> Руководство по JavaScript на сайте https://learn.javascript.ru/</h1>
-		<p>ПРИМЕР КОДА</p>
-		<h1>/**Информация о панели, сжатая в строку */</h1>
-		<h1> export class PanelInfo{</h1>
-		<h1> pan: string;</h1>
-		<h1> orientPanel: mycuts.VectorPanels;</h1>
-		<h1> constructor(pan: string, orientPanel: mycuts.VectorPanels){</h1>
-		<h1> this.pan = pan;</h1>
-		<h1> this.orientPanel = orientPanel;}}</h1>
+	<div class ="container-centered">
+		<div class ="columns_two">
+			<div class = columns_left>
+				<header>
+					<img src="./images/myfoto2.jpg" alt="MyFoto" width="230" height="200">
+					<h1>Надежда Осипова</h1>
+					<h4>junior frontend developer</h4>
+				</header>
+				<main>
+					<section class ="contact">
+						<h3>Контакты</h3>
+						<ul>
+							<li><p>Электронная почта: nadya21cheb@gmail.com</p></li>
+							<li><p>Телеграмма: @Nadya_cheb</p></li>
+							<li><p>Discord: Nadezda#6843</p></li>
+							<li><p>Адрес: Чебоксары, Чувашская Республика, Россия</p></li>
+						</ul>
+					</section>
+					<section class ="skills">
+						<h3>Навыки</h3>
+						<ul>
+							<li><p>Основы JavaScript</p></li>
+							<li><p>Основы TypeScript</p></li>							
+						</ul>
+					</section>
+					<section class ="languages">
+						<h3>Языки</h3>
+						<ul>
+							<li>
+								<p class = "spisokLanguage">Английский:</p> 
+								<p>уровень A1</p>
+							</li>
+							<li>
+								<p class = "spisokLanguage">Русский:</p> 
+								<p>родной</p>
+							</li>							
+						</ul>
+					</section>
+				</main>
+			</div>
+			<aside class = column-right>
+				<section class="about-myself">
+					<h3>Обо мне</h3>
+					<p> Я люблю получать новые знания. Нравится работать, доводить поставленные задачи до конца и видеть результаты своего труда.
+						Со школы выработала в себе качество – ответственность, которое мне помогает на работе. Веду здоровый образ жизни.
+					</p>
+					<p> После получения образования по специальности, недолго проработав профильно, ушла в другое направление. 
+						Несколько лет назад вернулась в программирование. 
+						Пишу скрипты на JavaScript для мебельной фабрики.
+					</p>
+				</section>
+				<section class="education">
+					<h3>Образование</h3>
+					<p> Чувашский государственный университет им.Ульянова (ЧГУ)</p>
+					<p> 1991-1996г.г.</p>
+					<p> Специальность: математик</p>
+				</section>
+				<section class="courses">
+					<h3>Курсы</h3>
+					<p>Руководство по JavaScript на сайте https://learn.javascript.ru</p>
+					</section>
+				<section class="code-expample">
+					<h3>Пример кода</h3>
+					<p> Информация о панели, сжатая в строку:</p>
+					<pre> 
+						<code>
+export class PanelInfo {
+	pan: string;
+	orientPanel: string;
+
+	constructor(pan: string, orientPanel: string) {
+		this.pan = pan;
+		this.orientPanel = orientPanel;
+	}
+}
+let panel = new PanelInfo("Стойка", "Вертикальная");
+</code>	
+					</pre>
+				</section>
+			</aside>		
+		</div>
+		<footer>
+			<a class = "icongithub" href = "https://github.com/Nadya-cheb" >
+				<img class="github-icon" src="./icons/IconGitHub.jpg" alt="Github Icon" width="30" height="30">
+				<p>Мой профиль в GitHub</p>
+			</a>
+			<p>2022</p>
+			<a href="https://rs.school/js/">
+				<img src="./icons/IconRSS.jpg" alt="RSSchool Icon" width="75" height="30">
+			</a>
+		</footer>
 	</div>
 </body>
 </html>
