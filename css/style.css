@@ -1,21 +1,17 @@
 body {
-  background-color: #f5f5f5;
+  background-color: var(--ligth-gray-color);
   box-sizing: border-box;
   display: block;
   line-height: 1;
 }
 
-body, div, a, p, span {
-  user-select: text !important;
-}
-
 :root {
   --dark-gray-color: #505050;
-  --ligth-gray-color: #777777;
-  --green-color: #cef2c8;
+  --ligth-gray-color: #b4b2b2;
+  --green-color: #e4f7e1;
 }
 
-.container-centered {
+.page_body {
   margin: 5px auto;
   width: 1024px;
   font-family: "Lato", sans-serif;
@@ -25,47 +21,71 @@ body, div, a, p, span {
   box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%);
 }
 
+.nav_list {
+  width: 100%;
+  height: 50px;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav a {
+  padding: 14px 10px;
+  line-height: 50px;
+  color: black;
+  transition: all 0.3s ease 0s;
+}
+
 header {
   padding: 30px;
   text-align: center;
   background-color: #ffffff;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  cursor: auto;
-  user-select: text;
+/*для размещения фотографии в рамке*/
+header img {
+  margin: 5px;
+  border: 5px solid var(--green-color);
+  border-radius: 50%;
 }
 
-.columns_two {
-  padding: 20px, 20px;
+.columns {
   display: flex;
 }
 
-.columns_left {
+.column_left {
   width: 40%;
   color: var(--dark-gray-color);
   background-color: var(--green-color);
 }
 
-.column-right {
+.column_right {
   width: 60%;
   padding: 40px;
   vertical-align: baseline;
 }
 
-.column-right h3 {
+.column_right h3 {
   flex: 1;
   vertical-align: middle;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--ligth-gray-color);
   border-bottom: 2px solid var(--ligth-gray-color);
 }
 
-.about-myself p, .education p, .courses p, .code-expample p {
+.about_myself p, .education p, .courses p, .code_expample p {
   margin-bottom: 10px;
   margin-left: 45px;
+}
+
+main {
+  margin-left: 5px;
 }
 
 main.contact h3 {
@@ -90,12 +110,17 @@ main h3 {
   vertical-align: middle;
 }
 
-.spisokLanguage {
-  font-weight: 700;
-  text-transform: uppercase;
+.languages p {
+  margin-block-start: 0px;
 }
 
-/*для размещения кода JS*/
+.mylanguage {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-block-end: 0px;
+}
+
+/*предварительный блок для размещения кода JS*/
 pre {
   margin-left: 50px;
   margin-top: 20px;
@@ -103,7 +128,7 @@ pre {
   font-family: monospace;
   font-size: 0.9rem;
   vertical-align: baseline;
-  background-color: var(--ligth-gray-color);
+  background-color: #ffffff;
 }
 
 /*нижняя часть*/
@@ -111,14 +136,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 5px;
   font-size: 0.8rem;
   color: #ffffff;
   background-color: var(--dark-gray-color);
-}
-
-footer.github-icon {
-  margin-right: 10px;
 }
 
 footer a {
@@ -128,11 +149,12 @@ footer a {
 
 .icongithub {
   display: flex;
+  margin-left: 50px;
   align-items: center;
 }
 
-/*для размещения фотографии в рамке*/
-header img {
-  margin: 5px;
-  border: 5px solid var(--green-color);
+.iconrss {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
 }
