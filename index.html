@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rsschool-cv-html</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="page_body">
+		<nav class="nav active">
+			<ul class="nav_list">
+				<li class="nav_item"><a href="#about_myself">About me</a></li>
+				<li class="nav_item"><a href="#contact">Contact</a></li>
+				<li class="nav_item"><a href="#skills">Skills</a></li>
+				<li class="nav_item"><a href="#languages">Languages</a></li>
+				<li class="nav_item"><a href="#education">Education</a></li>
+				<li class="nav_item"><a href="#code_expample">Code</a></li>
+			</ul>
+		</nav>
+		<div class="columns">
+			<div class=column_left>
+				<header>
+					<img src="./images/myfoto2.jpg" alt="MyFoto" width="200" height="200">
+					<h1>Nadezhda Osipova</h1>
+					<h4>junior frontend developer</h4>
+				</header>
+				<main>
+					<section class="contact" id="contact">
+						<h3>Contact</h3>
+						<ul>
+							<li>
+								<p>Email: nadya21cheb@gmail.com</p>
+							</li>
+							<li>
+								<p>Telegram: @Nadya_cheb</p>
+							</li>
+							<li>
+								<p>Discord: Nadezda#6843</p>
+							</li>
+							<li>
+								<p>Address: Cheboksary, Chuvashia, Russia</p>
+							</li>
+						</ul>
+					</section>
+					<section class="skills" id="skills">
+						<h3>Skills</h3>
+						<ul>
+							<li>
+								<p>Basics JavaScript</p>
+							</li>
+							<li>
+								<p>Basics TypeScript</p>
+							</li>
+						</ul>
+					</section>
+					<section class="languages" id="languages">
+						<h3>Languages</h3>
+						<ul>
+							<li>
+								<p class="mylanguage">English:</p>
+								<p>level A1</p>
+							</li>
+							<li>
+								<p class="mylanguage">Russian:</p>
+								<p>native</p>
+							</li>
+						</ul>
+					</section>
+				</main>
+			</div>
+			<aside class=column_right>
+				<section class="about_myself" id="about_myself">
+					<h3>About me</h3>
+					<p>I like to study and learn something new. I like to work, bring the tasks to the end and see
+						the results of your work. From school, I developed a quality in myself - responsibility, which
+						helps me at work. Lead a healthy lifestyle.
+					</p>
+					<p>After receiving an education in her specialty, having worked for a short time in a profile, she
+						went to another
+						direction.
+						I returned to programming a few years ago.
+						I write JavaScript scripts for a furniture factory.
+					</p>
+				</section>
+				<section class="education" id="education">
+					<h3>Education</h3>
+					<p>Chuvash State University named after I.N. Ulyanov</p>
+					<p>1991-1996</p>
+					<p>Specialty: mathematician</p>
+				</section>
+				<section class="courses">
+					<h3>Сourses</h3>
+					<p>JavaScript guide on the site https://learn.javascript.ru</p>
+				</section>
+				<section class="code_expample" id="code_expample">
+					<h3>Code example</h3>
+					<p>Checking the number belonging to a range min, max:</p>
+					<pre><code>
+/**
+* Checking the number belonging to a range min, max
+*/
+function InRange(value, min, max) {
+    let off = 0;  //measurement error
+    return value &gt;= (min - off) && value &lt;= (max + off);
+}
+let check = InRange(10, 0, 100);</code>
+					</pre>
+				</section>
+			</aside>
+		</div>
+		<footer>
+			<a class="icongithub" href="https://github.com/Nadya-cheb">
+				<img class="github-icon" src="./icons/IconGitHub.jpg" alt="Github Icon" width="30" height="30">
+				<p>My profile GitHub</p>
+			</a>
+			<p>© 2022</p>
+			<a class="iconrss" href="https://rs.school/js/">
+				<img src="./icons/IconRSS.jpg" alt="RSSchool Icon" width="75" height="30">
+			</a>
+		</footer>
+	</div>
+</body>
+</html>
